@@ -1,30 +1,25 @@
-
 from math import floor, log10
 
 def digits(n):
-
 	if n < 0:
 		n = abs(n)
-
 	return int(log10(n)) + 1 if n > 0 else 1
 
 def split_num(n, r_digits):
-
 	right = 0
-
 	for i in range(r_digits):
 
 		right += (n % 10) * (10 ** i)
 		n //= 10
-
 	left = n
-
 	return left, right
 
 def karatsuba(n1, n2):
 
 	"""
-	O(n ^ 1.59) time multiplcation algorithm.
+	Divide and conquer multiplication algorithm.
+
+	:approach:
 
 	The formula for Karatsuba's multiplication algorithm is constructed as follows:
 
@@ -52,6 +47,8 @@ def karatsuba(n1, n2):
 	n1 * n2 = (m1 * 10 ^ n) + ((m3 - m2 - m1) * 10 ^ (n / 2)) + m2
 
 	Which only requires 3 multiplications of 2 different numbers instead of 4.
+
+	:time complexity: O(n ^ 1.59)
 	"""
 
 	if n1 < 10 or n2 < 10:
