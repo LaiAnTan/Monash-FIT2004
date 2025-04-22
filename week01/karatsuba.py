@@ -24,7 +24,9 @@ def split_num(n, r_digits):
 def karatsuba(n1, n2):
 
 	"""
-	O(n ^ 1.59) multiplcation algorithm.
+	O(n ^ 1.59) time multiplcation algorithm.
+
+	The formula for Karatsuba's multiplication algorithm is constructed as follows:
 
 	n1 * n2 = ((l1 * 10 ^ (n / 2)) + r1) * ((l2 * 10 ^ (n / 2)) + r2)
 			= (l1 * l2 * 10 ^ n) + (l1 * r2 * 10 ^ (n / 2)) + (l2 * r1 * 10 ^ (n / 2)) + (r1 + r2)
@@ -48,6 +50,8 @@ def karatsuba(n1, n2):
 	
 	Therefore,
 	n1 * n2 = (m1 * 10 ^ n) + ((m3 - m2 - m1) * 10 ^ (n / 2)) + m2
+
+	Which only requires 3 multiplications of 2 different numbers instead of 4.
 	"""
 
 	if n1 < 10 or n2 < 10:
