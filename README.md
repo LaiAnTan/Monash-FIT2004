@@ -51,6 +51,7 @@ Each week `/weekX` may have subdirectories:
 - Graphs
   - Depth First Search
   - Breadth First Search
+  - Topological Sort
 
 - Lab
   - Key Lock Matching
@@ -63,14 +64,20 @@ Each week `/weekX` may have subdirectories:
   - Prim's algorithm
   - Kruskal's algorithm
 
-- Lab
+- Prep
   - All Reachable Vertices
+
+- Lab
+  - Graph has Cycle
+  - Graph is Two Colourable
+  - Number of valid Two Colourings
+  - Number of Connected Components
 
 [Week 6](/week06/)
 
-- Dynamic Programming
-  - Coin Change
-  - Unbounded Knapsack
+- [Dynamic Programming](/week06/dynamic_programming.md)
+  - [Coin Change](/week06/coinChange.py)
+  - [Unbounded Knapsack](/week06/unboundedKnapsack.py)
   - Bounded Knapsack
   - Edit Distance
 
@@ -84,6 +91,10 @@ Each week `/weekX` may have subdirectories:
 - Prep
   - Coin Change
   - Unbounded Knapsack
+
+- Lab
+  - Number of valid paths in a Maze
+  - Longest Increasing Subsequence
 
 [Week 8](/week08/)
 
